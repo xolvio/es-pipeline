@@ -1,0 +1,29 @@
+{
+  "name": "@xolvio/file-store",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    },
+    "./node": {
+      "types": "./dist/src/node.d.ts",
+      "default": "./dist/src/node.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && tsx ../../scripts/fix-esm-imports.ts",
+    "test": "vitest run --reporter=dot",
+    "type-check": "tsc --noEmit",
+    "link:dev": "pnpm build && pnpm link --global",
+    "unlink:dev": "pnpm unlink --global",
+    "release": "pnpm publish --no-git-checks"
+  },
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "version": "1.148.0"
+}

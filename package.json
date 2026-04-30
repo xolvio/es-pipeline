@@ -1,0 +1,16 @@
+{
+  "name": "@xolvio/es-pipeline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r --filter './packages/*' run build"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/node": "^20.11.24",
+    "tsx": "^4.7.1",
+    "typescript": "~5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "packageManager": "pnpm@10.15.0"
+}

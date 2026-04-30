@@ -1,0 +1,58 @@
+export type { EventHandler, EventSubscription, MessageBus } from '@xolvio/message-bus';
+export type {
+  CompletionConfig,
+  DeclareBuilder,
+  EmitChain,
+  ForEachBuilder,
+  GatherBuilder,
+  GatherChain,
+  HandleChain,
+  HandleOptions,
+  PhasedBuilder,
+  PhasedChain,
+  PhasedTerminal,
+  Pipeline,
+  PipelineBuilder,
+  RunBuilder,
+  TriggerBuilder,
+} from './builder/define';
+export { define } from './builder/define';
+export { defineV2, type PipelineV2, toGraph as toGraphV2 } from './builder/define-v2';
+export type {
+  AcceptsDescriptor,
+  CustomHandlerDescriptor,
+  EmitHandlerDescriptor,
+  EventPredicate,
+  FailureContext,
+  ForEachPhasedDescriptor,
+  GatherEventConfig,
+  HandlerDescriptor,
+  KeyExtractor,
+  PipelineDescriptor,
+  RunAwaitHandlerDescriptor,
+  SuccessContext,
+} from './core/descriptors';
+export type { Command, CommandDispatch, Event, HandlerFailedEvent } from './core/types';
+export { dispatch } from './core/types';
+export * from './engine/index';
+export type { GraphEdge, GraphIR, GraphNode, NodeType } from './graph/types';
+export type { EventLoggerOptions, LogEntry } from './logging/event-logger';
+export { EventLogger } from './logging/event-logger';
+export type { AwaitEvent, AwaitTrackerDocument } from './projections/await-tracker-projection';
+export { AwaitTracker } from './runtime/await-tracker';
+export type { PipelineContext, RuntimeConfig } from './runtime/context';
+export { EventCommandMapper } from './runtime/event-command-map';
+export { PipelineRuntime } from './runtime/pipeline-runtime';
+export type { ConcurrencyConfig } from './server/command-gate';
+export type { CommandHandlerWithMetadata, PipelineServerConfig } from './server/pipeline-server';
+export { PipelineServer } from './server/pipeline-server';
+export { SSEManager } from './server/sse-manager';
+export type { RunStats } from './store/pipeline-read-model';
+export type { SnapshotDiff, SnapshotResult } from './testing/snapshot-compare';
+export {
+  compareEventSequence,
+  containsSubsequence,
+  findMissingEvents,
+  findUnexpectedEvents,
+  formatSnapshotDiff,
+} from './testing/snapshot-compare';

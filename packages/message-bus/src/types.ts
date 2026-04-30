@@ -1,0 +1,34 @@
+// Core CQRS types
+type DefaultRecord = Record<string, unknown>;
+
+export type Command<CommandType extends string = string, CommandData extends DefaultRecord = DefaultRecord> = Readonly<{
+  type: CommandType;
+  data: Readonly<CommandData>;
+  timestamp?: Date;
+  requestId?: string;
+  correlationId?: string;
+}>;
+
+export type Event<EventType extends string = string, EventData extends DefaultRecord = DefaultRecord> = Readonly<{
+  type: EventType;
+  data: EventData;
+  timestamp?: Date;
+  requestId?: string;
+  correlationId?: string;
+}>;
+
+export type CommandHandler<TCommand extends Command = Command, TEvent extends Event = Event> = {
+  name: string;
+  handle: (command: TCommand) => Promise<TEvent | TEvent[]>;
+};
+
+export type EventHandler<TEvent extends Event = Event> = {
+  name: string;
+  handle: (event: TEvent) => Promise<void> | void;
+};
+
+export type EventSubscription = {
+  unsubscribe: () => void;
+};
+
+export type EventDefinition = string | { name: string; displayName: string };

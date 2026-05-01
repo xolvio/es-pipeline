@@ -1,0 +1,1 @@
+{"version":3,"file":"handler-adapter.d.ts","sourceRoot":"","sources":["../../../src/plugins/handler-adapter.ts"],"names":[],"mappings":"AAEA,OAAO,KAAK,EAAE,0BAA0B,EAAE,MAAM,2BAA2B,CAAC;AAC5E,OAAO,KAAK,EAAE,sBAAsB,EAAE,MAAM,iBAAiB,CAAC;AAE9D,wBAAgB,YAAY,CAAC,MAAM,EAAE,sBAAsB,GAAG,0BAA0B,CAYvF;AAED,wBAAgB,aAAa,CAAC,OAAO,EAAE,sBAAsB,EAAE,GAAG,0BAA0B,EAAE,CAE7F"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"stats.js","sourceRoot":"","sources":["../../../../src/engine/projections/stats.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAsB,MAAM,oCAAoC,CAAC;AAEhF,OAAO,EAAE,MAAM,EAAsB,CAAC;AAEtC,MAAM,CAAC,MAAM,eAAe,GAAG;IAC7B,IAAI,EAAE,OAAO;IACb,SAAS,EAAE,CAAC,mBAAmB,EAAE,oBAAoB,CAAU;IAC/D,MAAM;IACN,aAAa,EAAE,GAAG,EAAE,CAAC,QAAQ;CAC9B,CAAC"}

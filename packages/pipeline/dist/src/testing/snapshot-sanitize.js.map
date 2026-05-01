@@ -1,0 +1,1 @@
+{"version":3,"file":"snapshot-sanitize.js","sourceRoot":"","sources":["../../../src/testing/snapshot-sanitize.ts"],"names":[],"mappings":"AAOA,MAAM,UAAU,aAAa,CAAC,KAAY;IACxC,OAAO;QACL,IAAI,EAAE,KAAK,CAAC,IAAI;QAChB,IAAI,EAAE,KAAK,CAAC,IAAI;KACjB,CAAC;AACJ,CAAC;AAED,MAAM,UAAU,cAAc,CAAC,MAAe;IAC5C,OAAO,MAAM,CAAC,GAAG,CAAC,aAAa,CAAC,CAAC;AACnC,CAAC"}

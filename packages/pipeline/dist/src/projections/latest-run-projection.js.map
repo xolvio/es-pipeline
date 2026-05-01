@@ -1,0 +1,1 @@
+{"version":3,"file":"latest-run-projection.js","sourceRoot":"","sources":["../../../src/projections/latest-run-projection.ts"],"names":[],"mappings":"AAcA,MAAM,UAAU,MAAM,CAAC,SAAmC,EAAE,KAA8B;IACxF,OAAO;QACL,mBAAmB,EAAE,KAAK,CAAC,IAAI,CAAC,aAAa;QAC7C,cAAc,EAAE,KAAK,CAAC,IAAI,CAAC,cAAc;KAC1C,CAAC;AACJ,CAAC"}
